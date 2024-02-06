@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+
+}
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 1rem;
+  color: #2a2a2a;
+  margin: 0 auto;
+  background-color: #e6e2d7;
+  width: 100%;
+  text-align: right;
+  font-family: 'Noto Serif JP', serif;
+}
+
+ a { 
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+  color: #505050;
+}
+
+header,section,footer {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  width: 100%;
+  text-align: left;
+}
+
+section {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2.5rem;    
+  text-align: left;
+  color: white;
+  letter-spacing: 0.7rem;
+}
+/* --section-title---------------------------- */
+.section-title {
+  height: 300px;  
+  text-align: left;
+ }
+
+.section-title .en_title {
+  font-size: 1rem;    
+  font-weight: bold;
+  display: block;     
+}
+
+.section-title .ja_title {
+  font-size: 2rem;    
+  font-weight: bolder;
+}
+
+/* --header----------------------------------------- */
+#header {
+  width: 100%;
+  height: 800px;
+  background-image: url("sousaku_img/pistaci_pc.jpg");
+  /* background-size: 100%; */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+  }
+  
+#header .header-nav a:hover {
+    color: darkgreen;  
+    font-size: 1.2rem;
+    font-weight: bold;
+    -webkit-text-stroke:0.2px #fff3c6;
+  }
+  
+#header .site-title {
+   margin: 50px; 
+}
+
+#header .header-nav {
+   line-height: 3rem;
+   margin: 50px;
+}
+
+#header .button {
+   display: block;  
+   background-color: #404040;
+   width: 80px;
+   height:280px;  
+   align-items: center;
+   padding: unset;visibility: visible;
+   position:absolute;
+   left: 30px;
+   bottom: 30px;
+   transition: 1s ;
+}
+#header .button .btn {
+  display: block; 
+  color: white;
+  font-size: large;
+  width: 60px;
+  height:260px; 
+  align-items: center;
+  margin: 10px;
+  border: white solid 1px;  
+
+}
+
+#header .button .btn:hover {
+  border: #fff3c6 solid 1px;  
+  color: #fff3c6;
+}
+
+#header .button:hover {
+  background-color: rgb(20, 86, 20);
+}  
+
+/* --news------------------------------------- */
+#news {
+    height: 450px;
+    /* align-items: center;/*親要素にこの二行を*/
+    /* display: flex;       追加して中央寄せ */ 
+    margin: 150px auto;
+
+}
+
+#news .news-list {
+    height: 320px;
+    margin: 60px 100px;     
+}
+#news .news-list dt{
+    font-size: small;
+    padding: 12px 25px 12px 0;
+    border-right: #363636 solid 1px;     
+}
+#news .news-list dd{
+    font-size: large;
+    padding: 12px 0 12px 25px;
+}
+
+#news .news-list dd:last-child{
+    border-left: #363636 solid 1px;    
+}
+
+
+/* --products---------------------------------------------- */
+#products1, #products2 {
+   margin:100px  auto ;
+   padding-bottom: 20px;
+} 
+
+#products2 {
+   writing-mode: vertical-lr;
+   -webkit-writing-mode: vertical-lr;
+   -moz-writing-mode: vertical-lr;
+   -ms-writing-mode: tb-rl;
+}
+
+#products1 .section-title
+,#products2 .section-title {
+   display: flex; 
+   height: 500px;
+   align-items:center;
+ 
+}
+ #products1 .section-title .en_title 
+,#products2 .section-title .en_title {
+    margin-top:10px ;   
+}
+
+.pro-img {
+    width: 60%;
+    height: 82%;
+    margin:90px 20px 0 20px;
+    position: relative;
+}   
+
+#products1 .pro-text {
+    writing-mode: horizontal-tb; 
+    width: 350px;
+    height: 130px;
+    background: rgb(234, 212, 9,0.6); 
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+    bottom:-20px;
+    right: 280px;
+}
+
+#products2 .pro-text {
+    writing-mode: horizontal-tb; 
+    width: 350px;
+    height: 130px;
+    background: rgba(234, 61, 9, 0.378); 
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+    bottom:-20px;
+    right: -20px;
+}
+/* ---shop------------------------------------------ */
+.shop { 
+    vertical-align: bottom;  /*隙間をなくす */
+}
+/* --footer---------------------------------- */
+
+.footer {
+    background-color: #000000;
+    color: white;
+    display: flex;
+}
+
+.footer .footer-end {
+    writing-mode: horizontal-tb;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.footer .footer-list {
+    line-height: 3rem;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+ }
+
+.footer .footer-contents1  {
+    margin: 80px;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+ }
+
+ .footer .footer-contents1 p {
+    margin: 0 40px;
+}
+
+ .footer .footer-contents2  {
+    margin: 80px 20PX ;
+    font-size: small; 
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+ }
+
+ .footer .footer-contents2 a:hover {
+    text-decoration: none;
+  }
+ 
+ .footer .footer-contents2 ul {
+    display: flex;
+ }
+
+ .footer .footer-contents2 li {
+    margin: 10px;    
+ }
+
+ .footer .footer-contents2 li:first-child {
+    border-bottom: white solid 1px;
+    padding-bottom: 20px;
+    margin: 10px;    
+ }
+ 
+.footer .text  {
+    color: white;
+    font-size: small;
+    text-align: center;
+    background-color: #000000;
+    writing-mode: horizontal-tb;
+}
+
+/* --SP----------------------------------- */
+@media screen and (max-width: 768px) {
+  header,section,footer{
+    padding: 0 3%;
+  }
+  section {
+    width: 100%;
+  }
+ /* --header-------------------------------------    */
+  #header {
+    background-image: url("sousaku_img/pistaci_sp.jpg");
+    width: 100%;
+  } 
+  
+  #header .site-title
+ , #header .header-nav   {
+    margin: 20px; 
+ }
+ 
+/* --news------------------------------------ */
+ #news {
+  margin: 80px auto;
+ }
+
+ #news .news-list {
+  margin: 30px 10px;  
+ }
+
+ #news .news-list dt{
+  font-size: small;
+  padding: 12px 15px 12px 0;
+ }
+ #news .news-list dd{
+  font-size: large;
+  padding: 12px 0 12px 5px;
+ }
+ 
+  dt:nth-of-type(n + 4)   /*子要素の4つ目以降を非表示 */
+ ,dd:nth-of-type(n + 4) {
+   display: none;
+ }
+/* --products------------------------------------ */
+  #products1, #products2 {
+    margin: 70px auto;
+    padding: 0;
+ } 
+
+   #products1 .section-title
+  ,#products2 .section-title {
+   display: flex; 
+   height: 250px;
+   align-items:center;
+  }  
+
+   #products1 .section-title .ja_title 
+  ,#products2 .section-title .ja_title {
+     font-size: 1.4rem;
+
+  }
+   #products1 .section-title .en_title 
+  ,#products2 .section-title .en_title {
+   display: none;
+ }
+ 
+ .pro-img {
+    width: 90%;
+    margin:60px 0 0 0;
+ }   
+  
+ #products1 .pro-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 350px;
+    height: 100px;
+    padding-top: 30px;
+    bottom:-40px;
+    right: 300px;
+ }
+
+  #products2 .pro-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 350px;
+    height: 100px;
+    padding-top: 30px;
+    bottom:-40px;
+    right: -20px;
+ }
+/* --footer---------------------------------- */ 
+.footer {
+  height: 70%;
+}
+
+.footer .footer-end {
+    width: 100%;
+    height: 95%;
+}
+
+.footer .footer-list {
+    line-height: 2rem;
+    margin: 0 10px;
+ }
+
+.footer .footer-contents1  {
+    margin:40px 0 0 0 ;
+ }
+
+ .footer .footer-contents1 p {
+    margin: 0 5px;
+}
+
+ .footer .footer-contents2  {
+    height: 80%;
+    margin:40px 0 0 0 ;
+ }
+
+ .footer .text  {
+    width: 100%;
+    margin: 0;
+    padding:0 0 4px 0;
+ }
+} 
