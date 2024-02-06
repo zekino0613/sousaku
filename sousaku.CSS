@@ -69,7 +69,7 @@ section {
 #header {
   width: 100%;
   height: 800px;
-  background-image: url("sousaku_img/pistaci_pc.jpg");
+  background-image: url("https://github.com/zekino0613/sousaku/blob/main/sousaku_img/pistaci_pc.jpg?raw=true");
   /* background-size: 100%; */
   background-size: cover;
   background-position: center top;
