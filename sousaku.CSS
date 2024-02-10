@@ -38,8 +38,9 @@ header,section,footer {
 }
 
 section {
-    width: 1024px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .site-title {
@@ -68,9 +69,8 @@ section {
 /* --header----------------------------------------- */
 #header {
   width: 100%;
-  height: 800px;
-  background-image: url("https://github.com/zekino0613/sousaku/blob/main/sousaku_img/pistaci_pc.jpg?raw=true");
-  /* background-size: 100%; */
+  height: 120vh;
+  background-image: url("sousaku_img/pistaci_pc.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ section {
 /* --products---------------------------------------------- */
 #products1, #products2 {
    margin:100px  auto ;
-   padding-bottom: 20px;
+   padding-bottom: 20px;  
 } 
 
 #products2 {
@@ -194,29 +194,31 @@ section {
 
 #products1 .pro-text {
     writing-mode: horizontal-tb; 
-    width: 350px;
-    height: 130px;
-    background: rgb(234, 212, 9,0.6); 
-    color: white;
-    text-align: center;
-    padding-top: 40px;
     position: absolute;
-    bottom:-20px;
-    right: 280px;
+    width: 56%;
+    color: #fff;
+    background: rgb(234, 212, 9,0.6); 
+    text-align: center;
+    padding: 50px 0;
+    left: -20px;
+    bottom: -20px;
+    
 }
+    
+
 
 #products2 .pro-text {
-    writing-mode: horizontal-tb; 
-    width: 350px;
-    height: 130px;
-    background: rgba(234, 61, 9, 0.378); 
-    color: white;
-    text-align: center;
-    padding-top: 40px;
-    position: absolute;
-    bottom:-20px;
-    right: -20px;
+  writing-mode: horizontal-tb; 
+  position: absolute;
+  width: 56%;
+  color: #fff;
+  background: rgba(149, 42, 38, 0.6);
+  text-align: center;
+  padding: 50px 0;
+  right: -20px;
+  bottom: -20px;
 }
+
 /* ---shop------------------------------------------ */
 .shop { 
     vertical-align: bottom;  /*隙間をなくす */
@@ -224,6 +226,7 @@ section {
 /* --footer---------------------------------- */
 
 .footer {
+    width: 100%;
     background-color: #000000;
     color: white;
     display: flex;
@@ -336,7 +339,7 @@ section {
  }
 /* --products------------------------------------ */
   #products1, #products2 {
-    margin: 70px auto;
+    /* margin: 30px; */
     padding: 0;
  } 
 
@@ -361,26 +364,16 @@ section {
     width: 90%;
     margin:60px 0 0 0;
  }   
-  
- #products1 .pro-text {
-    font-size: 0.9rem;
-    font-weight: bold;
-    width: 350px;
-    height: 100px;
-    padding-top: 30px;
-    bottom:-40px;
-    right: 300px;
- }
 
-  #products2 .pro-text {
-    font-size: 0.9rem;
-    font-weight: bold;
-    width: 350px;
-    height: 100px;
-    padding-top: 30px;
-    bottom:-40px;
-    right: -20px;
- }
+  #products1 .pro-text 
+ ,#products2 .pro-text {
+  width: 64%;
+  font-size: 0.875rem;
+  padding: 30px 0;
+  
+}
+  
+
 /* --footer---------------------------------- */ 
 .footer {
   height: 70%;
